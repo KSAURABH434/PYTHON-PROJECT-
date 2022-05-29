@@ -1,7 +1,5 @@
-import numpy as np
-x = np.array(['Abhishek_Sir Vinay_Sir Farman_Sir Mukund_Sir'], dtype=np.str)
-print("Original Array:")
-print(x)
-r = np.char.split(x)
-print("\nSplit the element of the said array with spaces: ")
-print(r)
+def file_read(fname):
+        with open (fname, "r") as myfile:
+                data=myfile.readlines()
+                print(data)
+file_read('test.txt')
