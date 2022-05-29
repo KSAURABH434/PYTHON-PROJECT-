@@ -1,0 +1,6 @@
+a = 5
+b = 0
+try:
+    print(a/b)
+except ZeroDivisionError:
+    print(“You cant divide with 0”)
