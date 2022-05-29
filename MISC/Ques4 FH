@@ -1,6 +1,6 @@
-import numpy as np
-x = np.array([' Diya ', ' Shyama  ', ' Khushi  ', '  Kashish'], dtype=np.str)
-print("Original Array:")
-print(x)
-stripped = np.char.strip(x)
-print("\nRemove the leading and trailing whitespaces: ", stripped)
+def file_read(fname):
+        with open(fname) as f:
+                #Content_list is the list that contains the read lines.     
+                content_list = f.readlines()
+                print(content_list)
+
