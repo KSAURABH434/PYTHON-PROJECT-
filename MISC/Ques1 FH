@@ -1,10 +1,6 @@
-import numpy as np
-a1 = np.array(['CSK', 'MI'], dtype=np.str)
-a2 = np.array([' RR', ' RCB'], dtype=np.str)
-print("Array1:")
-print(a1)
-print("Array2:")
-print(a2)
-new_array = np.char.add(a1, a2)
-print("new array:")
-print(new_array)
+def file(fn):
+        with open(fn) as f:
+                for i, l in enumerate(f):
+                        pass
+        return i + 1
+print("Number of lines in the file: ",file("test.txt"))
